@@ -1,0 +1,11 @@
+valor = float(input('Digite o valor do emprestimo:'))
+salario = float(input('Digite o seu salario:'))
+anos = int(input('Digite a quantidade de anos para pagar o emprestimo:'))
+prestaçao = valor / (anos * 12)
+if prestaçao > salario * 0.3:
+    print('Emprestimo negado! A prestaçao é de R${:.2f}'.format(prestaçao))
+elif prestaçao <= salario * 0.3:
+    print('Emprestimo aprovado! A prestaçao é de R${:.2f}'.format(prestaçao))
+
+
+    
